@@ -1,0 +1,18 @@
+{
+  "/(app)/dashboard/page": "app/(app)/dashboard/page.js",
+  "/(app)/fees/page": "app/(app)/fees/page.js",
+  "/(app)/form-admin/page": "app/(app)/form-admin/page.js",
+  "/(app)/gallery/page": "app/(app)/gallery/page.js",
+  "/(app)/library/page": "app/(app)/library/page.js",
+  "/(app)/notices/page": "app/(app)/notices/page.js",
+  "/(app)/salaries/page": "app/(app)/salaries/page.js",
+  "/(app)/students/page": "app/(app)/students/page.js",
+  "/(app)/study-questions/page": "app/(app)/study-questions/page.js",
+  "/(app)/teachers/page": "app/(app)/teachers/page.js",
+  "/(app)/timetable/page": "app/(app)/timetable/page.js",
+  "/(app)/transport/page": "app/(app)/transport/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js"
+}

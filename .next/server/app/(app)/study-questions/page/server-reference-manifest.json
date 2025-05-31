@@ -1,0 +1,16 @@
+{
+  "node": {
+    "40ca64e00b4c3fdbbc5cf1e584b4755060f47efee9": {
+      "workers": {
+        "app/(app)/study-questions/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/study-questions/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/generate-study-questions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(app)/study-questions/page": "action-browser"
+      }
+    }
+  },
+  "edge": {}
+}

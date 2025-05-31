@@ -1,0 +1,115 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 276 35% 95%; /* #F0E6EF - Very Light Lavender */
+    --foreground: 275 25% 20%; /* #3D304C - Dark Purple-Gray */
+
+    --card: 276 35% 98%; /* #F7F2F7 - Lighter than background */
+    --card-foreground: 275 25% 20%; /* #3D304C */
+
+    --popover: 276 35% 98%; /* #F7F2F7 */
+    --popover-foreground: 275 25% 20%; /* #3D304C */
+
+    --primary: 274 100% 25%; /* #4B0082 - Indigo */
+    --primary-foreground: 276 100% 98%; /* #F9F5FC - Very Light Lavender/White */
+
+    --secondary: 275 40% 88%; /* #E0D8E9 - Lighter, desaturated purple */
+    --secondary-foreground: 275 25% 20%; /* #3D304C */
+
+    --muted: 275 40% 92%; /* #ECE5F0 - Even lighter, more desaturated */
+    --muted-foreground: 275 20% 45%; /* #6A5F75 - Grayer purple */
+
+    --accent: 274 100% 50%; /* #8F00FF - Violet */
+    --accent-foreground: 0 0% 100%; /* #FFFFFF - White */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 275 30% 80%; /* #CDC3D7 - Light purple-gray border */
+    --input: 275 30% 85%;   /* #DAD0E0 - Slightly lighter for input backgrounds */
+    --ring: 274 100% 50%;   /* Accent color for rings */
+
+    --chart-1: 274 76% 61%;
+    --chart-2: 274 58% 39%;
+    --chart-3: 274 37% 24%;
+    --chart-4: 274 74% 66%;
+    --chart-5: 274 87% 67%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 274 50% 15%; /* Darker Indigo for sidebar */
+    --sidebar-foreground: 276 35% 85%; /* Light Lavender for sidebar text */
+    --sidebar-primary: 274 100% 70%; /* Brighter Violet for sidebar active items */
+    --sidebar-primary-foreground: 0 0% 100%; /* White */
+    --sidebar-accent: 274 60% 25%; /* Slightly lighter Indigo for hover */
+    --sidebar-accent-foreground: 276 35% 90%; /* Lighter Lavender for hover text */
+    --sidebar-border: 274 50% 20%;
+    --sidebar-ring: 274 100% 70%;
+  }
+
+  .dark {
+    --background: 275 15% 10%; /* #1A171C - Very Dark Purple */
+    --foreground: 276 35% 85%; /* #D9CDE8 - Light Lavender */
+
+    --card: 275 15% 12%; /* #201C24 */
+    --card-foreground: 276 35% 85%; /* #D9CDE8 */
+
+    --popover: 275 15% 12%; /* #201C24 */
+    --popover-foreground: 276 35% 85%; /* #D9CDE8 */
+
+    --primary: 274 100% 65%; /* #A366FF - Lighter Indigo/Violet */
+    --primary-foreground: 275 25% 10%; /* #2B2135 - Dark for contrast */
+
+    --secondary: 275 20% 25%; /* #3C3444 - Darker, desaturated purple */
+    --secondary-foreground: 276 35% 85%; /* #D9CDE8 */
+
+    --muted: 275 15% 20%; /* #2E2833 */
+    --muted-foreground: 276 25% 65%; /* #A99CB9 */
+
+    --accent: 274 100% 70%; /* #B27EFF - Brighter Violet */
+    --accent-foreground: 275 15% 5%; /* #0F0D11 - Very dark, almost black */
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 275 15% 30%; /* #473F50 - Dark purple-gray border */
+    --input: 275 15% 25%;   /* #3C3444 */
+    --ring: 274 100% 70%;   /* Accent color for rings */
+
+    --chart-1: 274 70% 50%;
+    --chart-2: 274 60% 45%;
+    --chart-3: 274 80% 55%;
+    --chart-4: 274 65% 60%;
+    --chart-5: 274 75% 55%;
+
+    --sidebar-background: 275 10% 8%;
+    --sidebar-foreground: 276 35% 75%;
+    --sidebar-primary: 274 100% 65%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 275 15% 15%;
+    --sidebar-accent-foreground: 276 35% 85%;
+    --sidebar-border: 275 10% 12%;
+    --sidebar-ring: 274 100% 65%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  .fade-in-slide-in {
+    animation: fadeInSlideInAnimation 0.5s ease-in-out;
+  }
+
+  @keyframes fadeInSlideInAnimation {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+}

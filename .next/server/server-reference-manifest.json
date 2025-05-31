@@ -1,0 +1,28 @@
+{
+  "node": {
+    "402bf0e5a2d0dd81cf900708334a09d756928ca891": {
+      "workers": {
+        "app/page": {
+          "moduleId": "[project]/.next-internal/server/app/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/handle-enquiry-submission.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "action-browser"
+      }
+    },
+    "40ca64e00b4c3fdbbc5cf1e584b4755060f47efee9": {
+      "workers": {
+        "app/(app)/study-questions/page": {
+          "moduleId": "[project]/.next-internal/server/app/(app)/study-questions/page/actions.js { ACTIONS_MODULE0 => \"[project]/src/ai/flows/generate-study-questions.ts [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/(app)/study-questions/page": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "CWfwpGVGQlfsoRzKBSU5f9ZvmC6ZYVhLxqIemqB5Njo="
+}
